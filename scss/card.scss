@@ -1,10 +1,12 @@
 @import 'variables.scss';
 
 .card {
+    margin-bottom: 40px;
+    
     .panel {
-        $font-size: $normal-text - 2;        
-        
+        $font-size: $normal-text - 2;       
         border-radius: 0px !important;
+        
         &:hover, &:active {
             .panel-heading, .panel-footer {
                 opacity: 1;                
@@ -12,7 +14,7 @@
             .panel-body {
                 color: $text-color;                
             }
-        }        
+        }    
         .panel-heading, .panel-footer {            
             background-color: $theme-color;  
             opacity: 0.6;

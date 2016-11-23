@@ -1,22 +1,24 @@
 /*COLORS*/
-.card .panel {
-  border-radius: 0px !important; }
-  .card .panel:hover .panel-heading, .card .panel:hover .panel-footer, .card .panel:active .panel-heading, .card .panel:active .panel-footer {
-    opacity: 1; }
-  .card .panel:hover .panel-body, .card .panel:active .panel-body {
-    color: #000; }
-  .card .panel .panel-heading, .card .panel .panel-footer {
-    background-color: #67bd5c;
-    opacity: 0.6;
-    color: #fff; }
-    .card .panel .panel-heading h2, .card .panel .panel-footer h2 {
-      font-size: 24px;
-      margin: 10px auto; }
-  .card .panel .panel-body {
-    color: #8e8e8e;
-    font-size: 18px; }
-  .card .panel a:visited, .card .panel a:link, .card .panel a:active, .card .panel a:hover {
-    text-decoration: none;
-    color: #fff; }
+.card {
+  margin-bottom: 40px; }
+  .card .panel {
+    border-radius: 0px !important; }
+    .card .panel:hover .panel-heading, .card .panel:hover .panel-footer, .card .panel:active .panel-heading, .card .panel:active .panel-footer {
+      opacity: 1; }
+    .card .panel:hover .panel-body, .card .panel:active .panel-body {
+      color: #000; }
+    .card .panel .panel-heading, .card .panel .panel-footer {
+      background-color: #67bd5c;
+      opacity: 0.6;
+      color: #fff; }
+      .card .panel .panel-heading h2, .card .panel .panel-footer h2 {
+        font-size: 24px;
+        margin: 10px auto; }
+    .card .panel .panel-body {
+      color: #8e8e8e;
+      font-size: 18px; }
+    .card .panel a:visited, .card .panel a:link, .card .panel a:active, .card .panel a:hover {
+      text-decoration: none;
+      color: #fff; }
 
 /*# sourceMappingURL=card.css.map */
