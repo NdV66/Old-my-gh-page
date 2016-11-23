@@ -1,0 +1,177 @@
+@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Maven+Pro";
+/*COLORS*/
+/*COLORS*/
+/*------ ------ HEADER ------ ------*/
+.navbar-nav li.active a {
+  color: #67bd5c !important;
+  background-color: #fff !important; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important; }
+
+.navbar-brand {
+  color: #fff !important; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #67bd5c;
+  z-index: 9999;
+  border: 0;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  letter-spacing: 3px;
+  border-radius: 0;
+  color: #fff !important; }
+  .navbar li a {
+    color: #fff !important; }
+    .navbar li a:hover {
+      color: #67bd5c !important;
+      background-color: #fff !important; }
+
+/*------ ------ NAME ------ ------*/
+.jumbotron {
+  padding: 140px 60px;
+  background-image: url("../back.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  margin-bottom: 0; }
+  .jumbotron h1 {
+    color: #fff; }
+    .jumbotron h1 span {
+      border-bottom: 1px solid #fff; }
+
+.no-padding {
+  padding: 0 !important; }
+
+/*COLORS*/
+.card .panel {
+  border-radius: 0px !important; }
+  .card .panel:hover .panel-heading, .card .panel:hover .panel-footer, .card .panel:active .panel-heading, .card .panel:active .panel-footer {
+    opacity: 1; }
+  .card .panel:hover .panel-body, .card .panel:active .panel-body {
+    color: #000; }
+  .card .panel .panel-heading, .card .panel .panel-footer {
+    background-color: #67bd5c;
+    opacity: 0.6;
+    color: #fff; }
+    .card .panel .panel-heading h2, .card .panel .panel-footer h2 {
+      font-size: 24px;
+      margin: 10px auto; }
+  .card .panel .panel-body {
+    color: #8e8e8e;
+    font-size: 18px; }
+  .card .panel a:visited, .card .panel a:link, .card .panel a:active, .card .panel a:hover {
+    text-decoration: none;
+    color: #fff; }
+
+/*COLORS*/
+/*------ ------ ANIMATIONS ------ ------*/
+.slideanim {
+  visibility: hidden; }
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  visibility: visible; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%); } }
+.slide-down {
+  animation-name: slide-down;
+  -webkit-animation-name: slide-down;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s; }
+
+/*COLORS*/
+/*------ ------ FOOTER ------ ------*/
+footer .container {
+  padding: 15px;
+  background-color: transparent; }
+  footer .container p {
+    color: #8e8e8e; }
+
+/*------ ------ GLOBAL ------ ------*/
+.margin-before {
+  margin-top: 20px; }
+
+/*------ ------ GLYPHICON ------ ------*/
+.glyphicon {
+  font-size: 150px;
+  color: #67bd5c;
+  margin-top: 40%; }
+
+body, html {
+  height: 100%; }
+
+body {
+  background-color: #eaeded; }
+
+/*------ ------ MAIN ------ ------*/
+main {
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: 'Maven Pro', sans-serif; }
+  main .container {
+    background-color: #fff;
+    padding: 12px 60px; }
+  main h2 {
+    letter-spacing: 3px; }
+  main h4 {
+    margin-bottom: 60px; }
+  main #contact a:visited, main #contact a:link, main #contact a:active, main #contact a:hover {
+    text-decoration: none;
+    color: #67bd5c; }
+
+/*@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}*/
+.special {
+  background-image: url("../back.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url("../back.png"), linear-gradient(0deg, white 0%, white 46%, #280f36 47%, #280f36 100%);
+  /* w3c */ }
+  .special h2, .special h4 {
+    color: #fff; }
+
+@media screen and (min-width: 280px) and (max-width: 991px) {
+  main .card {
+    padding: 0px; }
+    main .card:last-child {
+      margin-bottom: 200px; } }
+@media screen and (max-width: 767px) {
+  .glyphicon {
+    display: none; }
+
+  main .container {
+    padding: 12px !important; }
+
+  main .card {
+    padding: 0px; }
+    main .card:last-child {
+      margin-bottom: 200px; }
+
+  main {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=main.css.map */
