@@ -10,3 +10,13 @@
     color: $theme-color;
     margin-top: $icon-margin-top;
 }
+
+.container, .jumbotron {
+    border-radius: 0 !important;
+}
+
+@media screen and (max-width: 778px) {
+    .container-fluid {
+        padding: 0px !important;
+    }
+}

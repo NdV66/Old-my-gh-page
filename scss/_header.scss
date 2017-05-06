@@ -2,10 +2,10 @@
 
 /*------ ------ HEADER ------ ------*/
 .navbar-nav li.active a {
-      color: $theme-color !important;
-      background-color: $background !important;
-  }
-  
+    color: $theme-color !important;
+    background-color: $background !important;
+}
+
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: $prime-text !important;
@@ -14,7 +14,7 @@
 .navbar-brand {
     color: $prime-text !important;
 }
-  
+
 .navbar {
     margin-bottom: 0;
     background-color: $theme-color;
@@ -25,31 +25,26 @@
     letter-spacing: $letter-spacing;
     border-radius: 0;
     color: $prime-text !important;
+    padding: $nav-text/3 0 !important;
 
     li a {
         color: $prime-text !important;
+        height: 100%;
         &:hover {
             color: $theme-color !important;
             background-color: $background !important;
         }
-    }    
+    }
 }
 
 /*------ ------ NAME ------ ------*/
 .jumbotron {
-    padding: $padding-topBottom + 20 $padding-sides;
-    background-image: url('../back.png');
+    padding: 270px 0px;
+    background-image: url('../images/fejsbuk.png'), linear-gradient(to right, #2D3E50 52%, #34495E 52%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
     margin-bottom: 0;
-    
-    h1 {
-        color: $prime-text;   
-        span {
-            border-bottom: $border-name-size solid $background;    
-        }
-    }
 }
 
 .no-padding {
