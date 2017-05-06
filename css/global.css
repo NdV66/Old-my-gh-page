@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$icon-size".
-        on line 9 of A:\NetBenasProjekty\HTML\NewPage\public_html\scss\global.scss
+        on line 9 of A:\mojeRepa\NdV66.github.io\scss\global.scss
 
 4:     margin-top: 20px;
 5: }
@@ -13,7 +13,7 @@ Error: Undefined variable: "$icon-size".
 12: }
 
 Backtrace:
-A:\NetBenasProjekty\HTML\NewPage\public_html\scss\global.scss:9
+A:\mojeRepa\NdV66.github.io\scss\global.scss:9
 A:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 A:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 A:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -60,4 +60,4 @@ A:/Program Files/Ruby23-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$icon-size\".\A         on line 9 of A:\NetBenasProjekty\HTML\NewPage\public_html\scss\global.scss\A \A 4:     margin-top: 20px;\A 5: }\A 6: \A 7: /*------ ------ GLYPHICON ------ ------*/\A 8: .glyphicon {\A 9:     font-size: $icon-size;\A 10:     color: $theme-color;\A 11:     margin-top: $icon-margin-top;\A 12: }"; }
+  content: "Error: Undefined variable: \"$icon-size\".\A         on line 9 of A:\mojeRepa\NdV66.github.io\scss\global.scss\A \A 4:     margin-top: 20px;\A 5: }\A 6: \A 7: /*------ ------ GLYPHICON ------ ------*/\A 8: .glyphicon {\A 9:     font-size: $icon-size;\A 10:     color: $theme-color;\A 11:     margin-top: $icon-margin-top;\A 12: }"; }
