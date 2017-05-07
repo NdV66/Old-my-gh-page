@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: $theme-light;
+}
+
+.glyphicon {
+    font-size: $icon-size;
+    color: $theme-color;
+    margin-top: $icon-margin-top;
+}
+
+.container, .jumbotron {
+    border-radius: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}

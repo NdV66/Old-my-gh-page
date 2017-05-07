@@ -1,10 +1,8 @@
 @import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
 @import "https://fonts.googleapis.com/css?family=Maven+Pro";
-/*COLORS*/
-/*COLORS*/
 /*------ ------ HEADER ------ ------*/
 .navbar-nav li.active a {
-  color: #67bd5c !important;
+  color: #5165A2 !important;
   background-color: #fff !important; }
 
 .navbar-default .navbar-toggle {
@@ -16,60 +14,99 @@
 
 .navbar {
   margin-bottom: 0;
-  background-color: #67bd5c;
+  background-color: #5165A2;
   z-index: 9999;
   border: 0;
-  font-size: 15px !important;
+  font-size: 18px !important;
   line-height: 1.5 !important;
   letter-spacing: 3px;
   border-radius: 0;
-  color: #fff !important; }
+  color: #fff !important;
+  padding: 6px 0 !important; }
   .navbar li a {
-    color: #fff !important; }
+    color: #fff !important;
+    height: 100%; }
     .navbar li a:hover {
-      color: #67bd5c !important;
+      color: #5165A2 !important;
       background-color: #fff !important; }
 
 /*------ ------ NAME ------ ------*/
 .jumbotron {
-  padding: 140px 60px;
-  background-image: url("../back.png");
+  padding: 270px 0px;
+  background-image: url("../images/fejsbuk.png"), linear-gradient(to right, #2D3E50 52%, #34495E 52%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
   margin-bottom: 0; }
-  .jumbotron h1 {
-    color: #fff; }
-    .jumbotron h1 span {
-      border-bottom: 1px solid #fff; }
 
-.no-padding {
-  padding: 0 !important; }
+/*
+    Background image is zooming when parent is hover.
+    HTML example:
+    ...
+    <div class="parent-scale-background set-height-etc">
+        <div id="here-come-background-image!" class="child-scale-background">
+            bla bla bla
+        </div>
+    </div>
+    ...
+*/
+.parent-scale-background, .card {
+  overflow: hidden; }
 
-/*COLORS*/
+.child-scale-background, .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  .child-scale-background:hover, .image:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25); }
+
 .card {
-  margin-bottom: 40px; }
-  .card .panel {
-    border-radius: 0px !important; }
-    .card .panel:hover .panel-heading, .card .panel:hover .panel-footer, .card .panel:active .panel-heading, .card .panel:active .panel-footer {
-      opacity: 1; }
-    .card .panel:hover .panel-body, .card .panel:active .panel-body {
-      color: #000; }
-    .card .panel .panel-heading, .card .panel .panel-footer {
-      background-color: #67bd5c;
-      opacity: 0.6;
-      color: #fff; }
-      .card .panel .panel-heading h2, .card .panel .panel-footer h2 {
-        font-size: 24px;
-        margin: 10px auto; }
-    .card .panel .panel-body {
-      color: #8e8e8e;
-      font-size: 18px; }
-    .card .panel a:visited, .card .panel a:link, .card .panel a:active, .card .panel a:hover {
+  height: 240px;
+  position: relative;
+  margin-bottom: 20px; }
+
+.desc {
+  color: #fff;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px;
+  font-size: 23.4px; }
+  .desc a {
+    width: 100%;
+    display: inline-block;
+    outline: none; }
+    .desc a:visited, .desc a:link, .desc a:active, .desc a:hover {
       text-decoration: none;
       color: #fff; }
 
-/*COLORS*/
+#ndv66-page {
+  background-image: url("../images/fejsbuk.png"); }
+
+#sw-tool {
+  background-image: url("../images/sw.png"); }
+
+#old-page {
+  background-image: url("../images/old.png"); }
+
+#rocket {
+  background-image: url("../images/rocket.png"); }
+
+#sss {
+  background-image: url("../images/sss.png"); }
+
 /*------ ------ ANIMATIONS ------ ------*/
 .slideanim {
   visibility: hidden; }
@@ -101,79 +138,63 @@
   animation-duration: 0.8s;
   -webkit-animation-duration: 0.8s; }
 
-/*COLORS*/
-/*------ ------ FOOTER ------ ------*/
 footer .container {
-  padding: 15px;
+  padding: 30px;
   background-color: transparent; }
   footer .container p {
     color: #8e8e8e; }
-
-/*------ ------ GLOBAL ------ ------*/
-.margin-before {
-  margin-top: 20px; }
-
-/*------ ------ GLYPHICON ------ ------*/
-.glyphicon {
-  font-size: 150px;
-  color: #67bd5c;
-  margin-top: 40%; }
 
 body, html {
   height: 100%; }
 
 body {
-  background-color: #eaeded; }
+  background-color: #fbfbfb; }
 
-/*------ ------ MAIN ------ ------*/
-main {
-  font-size: 20px;
-  line-height: 1.8;
-  font-family: 'Maven Pro', sans-serif; }
-  main .container {
-    background-color: #fff;
-    padding: 12px 60px; }
-  main h2 {
-    letter-spacing: 3px; }
-  main h4 {
-    margin-bottom: 60px; }
-  main #contact a:visited, main #contact a:link, main #contact a:active, main #contact a:hover {
-    text-decoration: none;
-    color: #67bd5c; }
+.glyphicon {
+  font-size: 220px;
+  color: #5165A2;
+  margin-top: 40%; }
 
-/*@mixin linear-gradient($direction, $color-stops...) {
-  background: nth(nth($color-stops, 1), 1);
-  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background: linear-gradient($direction, $color-stops);
-}*/
-.special {
-  background-image: url("../back.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-image: url("../back.png"), linear-gradient(0deg, white 0%, white 46%, #280f36 47%, #280f36 100%);
-  /* w3c */ }
-  .special h2, .special h4 {
-    color: #fff; }
+.container, .jumbotron {
+  border-radius: 0 !important; }
 
-@media screen and (min-width: 280px) and (max-width: 991px) {
-  main .card {
-    padding: 0px; }
-    main .card:last-child {
-      margin-bottom: 200px; } }
+.no-padding {
+  padding: 0 !important; }
+
+.skills-block {
+  padding-bottom: 10px;
+  line-height: 36px; }
+
 @media screen and (max-width: 767px) {
   .glyphicon {
     display: none; }
 
-  main .container {
-    padding: 12px !important; }
-
-  main .card {
-    padding: 0px; }
-    main .card:last-child {
-      margin-bottom: 200px; }
-
   main {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .container-fluid {
+    padding: 0px !important; } }
+/*------ ------ MAIN ------ ------*/
+main {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-family: 'Maven Pro', sans-serif; }
+  main .container {
+    background-color: #fff; }
+  main h2 {
+    letter-spacing: 3px;
+    font-size: 40px; }
+  main h4 {
+    margin-bottom: 36px;
+    font-size: 19px;
+    line-height: 21.6px; }
+  main #contact .container {
+    padding-bottom: 40px; }
+  main #contact a:visited, main #contact a:link, main #contact a:active, main #contact a:hover {
+    text-decoration: none;
+    color: #5165A2; }
+  main #about-me .glyphicon {
+    position: relative;
+    top: 50px; }
 
 /*# sourceMappingURL=main.css.map */

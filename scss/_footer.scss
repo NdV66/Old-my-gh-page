@@ -1,0 +1,9 @@
+footer {
+    .container{
+        padding: $padding-sides / 2;
+        background-color: transparent;
+        p {
+            color: $pale-text;
+        }
+    }
+}

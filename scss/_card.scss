@@ -1,0 +1,49 @@
+@import "_background-scale";
+
+.card {
+    @extend .parent-scale-background;
+    height: 240px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image {
+    @extend .child-scale-background;
+}
+
+
+.desc {
+    color: $prime-text;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-size: $normal-text * 1.3;
+
+    a {
+        width: 100%;
+        display: inline-block;
+        outline: none;
+        &:visited, &:link, &:active, &:hover {
+            text-decoration: none;
+            color: $prime-text;
+        }
+    }
+}
+
+#ndv66-page {
+    background-image: url('../images/fejsbuk.png');
+}
+#sw-tool {
+    background-image: url('../images/sw.png');
+}
+#old-page {
+    background-image: url('../images/old.png');
+}
+#rocket {
+    background-image: url('../images/rocket.png');
+}
+#sss {
+    background-image: url('../images/sss.png');
+}

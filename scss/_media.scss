@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+    .glyphicon {
+        display: none;
+    }
+    main {
+        font-size: $normal-text - 2;
+    }
+    .container-fluid {
+        padding: 0px !important;
+    }
+}
