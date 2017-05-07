@@ -5,7 +5,6 @@ define(['jquery', 'Model', 'View', 'Controller', 'bootstrap'], function ($, Mode
 
         /* ------ ------ LOGICAL PART ------ ------ */
         APP.controller = new Controller(new Model("NdV66"), new View());
-        //APP.controller.repos();
         APP.controller.bindEvents();
     });
 });

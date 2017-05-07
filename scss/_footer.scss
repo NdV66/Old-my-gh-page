@@ -1,10 +1,7 @@
-@import "variables.scss";
-
-/*------ ------ FOOTER ------ ------*/
-footer {    
+footer {
     .container{
-        padding: $padding-sides/4;
-        background-color: transparent; 
+        padding: $padding-sides / 2;
+        background-color: transparent;
         p {
             color: $pale-text;
         }

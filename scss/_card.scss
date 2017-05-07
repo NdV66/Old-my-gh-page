@@ -1,16 +1,44 @@
+@mixin scale($value) {
+    -webkit-transform:scale($value); /* Safari and Chrome */
+    -moz-transform:scale($value); /* Firefox */
+    -ms-transform:scale($value); /* IE 9 */
+    -o-transform:scale($value); /* Opera */
+    transform:scale($value);
+}
+
+@mixin transition($value) {
+    -webkit-transition: all $value ease; /* Safari and Chrome */
+    -moz-transition: all $value ease; /* Firefox */
+    -ms-transition: all $value ease; /* IE 9 */
+    -o-transition: all $value ease; /* Opera */
+    transition: all $value ease;
+}
+
 .card {
-    background-position: center center;
-    background-repeat: no-repeat;
     height: 240px;
-    background-size: 100%;
     position: relative;
     margin-bottom: 20px;
+    overflow: hidden;
 }
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include transition(1s);
+
+    &:hover {
+        @include scale(1.25);
+    }
+}
+
 
 .desc {
     color: $prime-text;
     position: relative;
-    top: 20px;
+    top: 100px;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
     padding: 4px;
@@ -19,6 +47,7 @@
     a {
         width: 100%;
         display: inline-block;
+        outline: none;
         &:visited, &:link, &:active, &:hover {
             text-decoration: none;
             color: $prime-text;

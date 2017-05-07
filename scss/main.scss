@@ -45,24 +45,9 @@ main {
     }
 }
 
-@media screen and (min-width: 280px) and (max-width: 991px) {
-    main .card {
-        padding: 0px;
-        &:last-child {
-            margin-bottom: 200px;
-        }
-    }
-}
-
 @media screen and (max-width: 767px) {
     .glyphicon {
         display: none;
-    }
-    main .card {
-        padding: 0px;
-        &:last-child {
-            margin-bottom: 200px;
-        }
     }
     main {
         font-size: $normal-text - 2;

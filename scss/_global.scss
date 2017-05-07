@@ -1,10 +1,3 @@
-
-/*------ ------ GLOBAL ------ ------*/
-.margin-before {
-    margin-top: 20px;
-}
-
-/*------ ------ GLYPHICON ------ ------*/
 .glyphicon {
     font-size: $icon-size;
     color: $theme-color;
@@ -13,6 +6,10 @@
 
 .container, .jumbotron {
     border-radius: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
 }
 
 @media screen and (max-width: 778px) {
