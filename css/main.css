@@ -83,7 +83,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   padding: 4px;
-  font-size: 26px; }
+  font-size: 23.4px; }
   .desc a {
     width: 100%;
     display: inline-block;
@@ -148,7 +148,7 @@ body, html {
   height: 100%; }
 
 body {
-  background-color: #eaeded; }
+  background-color: #fbfbfb; }
 
 .glyphicon {
   font-size: 220px;
@@ -162,21 +162,22 @@ body {
   padding: 0 !important; }
 
 .skills-block {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  line-height: 36px; }
 
 @media screen and (max-width: 767px) {
   .glyphicon {
     display: none; }
 
   main {
-    font-size: 18px; }
+    font-size: 16px; }
 
   .container-fluid {
     padding: 0px !important; } }
 /*------ ------ MAIN ------ ------*/
 main {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 23.4px;
   font-family: 'Maven Pro', sans-serif; }
   main .container {
     background-color: #fff; }
@@ -184,7 +185,9 @@ main {
     letter-spacing: 3px;
     font-size: 40px; }
   main h4 {
-    margin-bottom: 40px; }
+    margin-bottom: 36px;
+    font-size: 19px;
+    line-height: 21.6px; }
   main #contact .container {
     padding-bottom: 40px; }
   main #contact a:visited, main #contact a:link, main #contact a:active, main #contact a:hover {
@@ -192,6 +195,6 @@ main {
     color: #5165A2; }
   main #about-me .glyphicon {
     position: relative;
-    top: 100px; }
+    top: 50px; }
 
 /*# sourceMappingURL=main.css.map */
