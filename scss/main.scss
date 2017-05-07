@@ -7,19 +7,12 @@
 @import "_footer.scss";
 @import "_global.scss";
 @import "_skills.scss";
-
-body, html {
-    height: 100%;
-}
-
-body {
-    background-color: $theme-light;
-}
+@import "_media.scss";
 
 /*------ ------ MAIN ------ ------*/
 main {
     font-size: $normal-text;
-    line-height: 1.8;
+    line-height: $normal-text * 1.5;
     font-family: 'Maven Pro', sans-serif;
 
     .container {
@@ -32,10 +25,13 @@ main {
     }
 
     h4{
-        margin-bottom: $normal-text * 3;
+        margin-bottom: $normal-text * 2;
     }
 
     #contact {
+        .container {
+            padding-bottom: 40px;
+        }
         a {
             &:visited, &:link, &:active, &:hover {
                     text-decoration: none;
@@ -43,13 +39,11 @@ main {
                 }
             }
     }
-}
 
-@media screen and (max-width: 767px) {
-    .glyphicon {
-        display: none;
-    }
-    main {
-        font-size: $normal-text - 2;
+    #about-me {
+        .glyphicon {
+            position: relative;
+            top: 100px;
+        }
     }
 }
